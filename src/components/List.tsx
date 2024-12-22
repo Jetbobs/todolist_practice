@@ -20,7 +20,7 @@ const List = () => {
         }}
       />
 
-      <div className="item_list">
+      <div className="flex flex-col item_list gap-[20px]">
         <ListItem></ListItem>
         <ListItem></ListItem>
         <ListItem></ListItem>
