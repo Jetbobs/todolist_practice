@@ -21,9 +21,9 @@ const List = () => {
       />
 
       <div className="flex flex-col item_list gap-[20px]">
-        <ListItem></ListItem>
-        <ListItem></ListItem>
-        <ListItem></ListItem>
+        <ListItem text={"제목1"}></ListItem>
+        <ListItem text={"제목2"}></ListItem>
+        <ListItem text={"제목3"}></ListItem>
       </div>
     </div>
   );
