@@ -12,7 +12,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div className="App flex flex-col mx-auto my-0 w-[500px] gap-[20px] h-full">
+      <div className="App flex flex-col mx-auto my-0 w-[500px] gap-[20px] h-full justify-center">
         <header>
           <Header></Header>
         </header>
