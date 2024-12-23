@@ -10,14 +10,20 @@ import List from "./components/List";
 import "./App.css";
 
 function App() {
+  const [items, setItems] = useState<string[]>([]);
+
+  const addItem = (newItem: string) => {
+    setItems([...items, newItem]);
+  };
+
   return (
     <>
       <div className="App flex flex-col mx-auto my-0 w-[500px] gap-[20px] h-full justify-center">
         <header>
           <Header></Header>
         </header>
-        <Editor></Editor>
-        <List></List>
+        <Editor addItem={addItem}></Editor>
+        <List items={items}></List>
       </div>
     </>
   );
